@@ -8,6 +8,15 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
 **Nota**: Las instrucciones que se presentan a continuación se realizaron tomando como base los proyectos de Marketplace utilizados en el curso.
 
 1. Maven
+Inicialmente se debe configurar las dependencias de maven en el archivo pom.xml del proyecto:
+Se agrega en propiedades la version de la libreria de spoon:
+<spoon.version>4.3.0</spoon.version>        
+Se agrega la dependencia:
+<dependency>
+  <groupId>fr.inria.gforge.spoon</groupId>
+  <artifactId>spoon-core</artifactId>
+  <version>${spoon.version}</version>
+</dependency>   
 2. 
 
 ### Desarrolladores
