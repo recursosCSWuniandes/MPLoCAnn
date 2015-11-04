@@ -33,7 +33,12 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   
   <a href="https://www.dropbox.com/s/bqha5p3aknmjg7k/MPAnnotationTest.java?dl=0">MPAnnotation.java</a>
 
-4. Crear directorio 'data' en la raíz del proyecto para que allí se generen los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se debera modificar la ruta en la linea 35 de la clase <b>MPAnnotationProcessorSpoon.java</b>
+4. Crear directorio 'data' del back-end y el front-end para que allí se generen los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se deberá modificar la ruta en la linea 35 de la clase <b>MPAnnotationProcessorSpoon.java</b>.
+
+5. Finalmente se deben agregar la anotación a los metodos que queremos sean contados de la siguiente manera:
+
+  @MPAnnotation(tier="Nombre_de_la_capa", reqId="Id_del_requerimiento")
+
 
 ### Desarrolladores
 * Juan David García
