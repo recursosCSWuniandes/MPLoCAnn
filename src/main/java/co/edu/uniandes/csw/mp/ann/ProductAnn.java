@@ -1,6 +1,4 @@
-package co.edu.uniandes.csw.mp.test;
-
-import co.edu.uniandes.csw.mp.ann.MPAnnotation;
+package co.edu.uniandes.csw.mp.ann;
 
 /**
  * Clase de prueba con un método anotado

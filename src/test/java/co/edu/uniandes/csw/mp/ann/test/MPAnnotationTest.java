@@ -1,6 +1,6 @@
-package co.edu.uniandes.csw.mpusedvehicle.analysis;
+package co.edu.uniandes.csw.mp.ann.test;
 
-import co.edu.uniandes.csw.mp.proc.MPAnnotationProcessorSpoon;
+import co.edu.uniandes.csw.mp.ann.MPAnnotationProcessorSpoon;
 import org.junit.Test;
 import spoon.Launcher;
 import spoon.SpoonAPI;

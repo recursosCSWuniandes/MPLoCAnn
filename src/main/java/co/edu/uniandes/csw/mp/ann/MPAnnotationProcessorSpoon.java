@@ -1,6 +1,5 @@
-package co.edu.uniandes.csw.mp.proc;
+package co.edu.uniandes.csw.mp.ann;
 
-import co.edu.uniandes.csw.mp.ann.MPAnnotation;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -32,6 +31,7 @@ public class MPAnnotationProcessorSpoon extends AbstractAnnotationProcessor<MPAn
         // Genera .csv con la información
         try {
             Date fecha = Calendar.getInstance().getTime();
+            // TODO modificar ruta si es necesario
             String ruta = "./data/LoC_Report_" + fecha.getMonth() + fecha.getDay() + "_" + fecha.getHours() + fecha.getMinutes() + ".csv";
             boolean existe = false;
 
