@@ -17,10 +17,10 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   
   Maven: http://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core/4.3.0
 
-2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al source del proyecto en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contaran las lineas de los metodos.
+2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al source del back-end y el front-end en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contaran las lineas de los metodos.
  
 
-  Los archivos estan disponibles en dropbox en los siguientes vículos:
+  Los archivos estan disponibles en dropbox en los siguientes vínculos:
   
   <a href="https://www.dropbox.com/s/t76k6ykxmyy0unc/MPAnnotation.java?dl=0">MPAnnotation.java</a>
   
