@@ -27,7 +27,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   <a href="https://www.dropbox.com/s/2vm6svhgpdz8c4l/MPAnnotationProcessorSpoon.java?dl=0">MPAnnotationProcessorSpoon.java</a>
 
 
-3. Crear directorio data en la raiz del proyecto para que allí se generen los reportes (.csv) con la información del conteo.
+3. Crear directorio 'data' en la raiz del proyecto para que allí se generen los reportes (.csv) con la información del conteo.
 
 ### Desarrolladores
 * Juan David García
