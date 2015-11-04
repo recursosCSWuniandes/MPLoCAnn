@@ -26,7 +26,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   
   <a href="https://www.dropbox.com/s/2vm6svhgpdz8c4l/MPAnnotationProcessorSpoon.java?dl=0">MPAnnotationProcessorSpoon.java</a>
   
-3. Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado al directorio de pruebas en un paquete <b>co.edu.uniandes.csw.mp.ann.test</b>, este clase sera ejecutada al hacer Built del proyecto y ejecutará el processor que contará las lineas de los método con la anotacion.
+3. Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado al directorio de pruebas en un paquete <b>co.edu.uniandes.csw.mp.ann.test</b>, este clase será ejecutada al hacer Built del proyecto y ejecutará el processor que contará las lineas de los método con la anotacion.
 
 
   El archivo también esta disponible en dropbox en el siguiente vínculo:
