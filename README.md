@@ -14,6 +14,8 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   Liberia: <a href="http://spoon.gforge.inria.fr/">Spoon</a>
 
   Versión: 4.3.0
+  
+  Maven: http://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core/4.3.0
 
 2. 
 
