@@ -16,6 +16,14 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   Versión: 4.3.0
   
   Maven: http://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core/4.3.0
+  
+  Adicionalmente en el pom.xml del front-end se debe configurar la libreria de JUnit, dado que esta aun no se ha agregado.
+
+  Liberia: <a href="http://junit.org/">Spoon</a>
+
+  Versión: 4.10
+  
+  Maven: http://mvnrepository.com/artifact/junit/junit/4.10
 
 2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al source del back-end y el front-end en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contarán las lineas de los metodos.
  
