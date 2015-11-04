@@ -9,7 +9,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
 
 1. Maven
 
-  Inicialmente se debe configurar las dependencia de maven en el archivo pom.xml del back-end y el front-end del proyecto:
+  Inicialmente se debe configurar las dependencia de maven en el archivo pom.xml del back-end del proyecto:
 
   Liberia: <a href="http://spoon.gforge.inria.fr/">Spoon</a>
 
@@ -25,7 +25,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   
   Maven: http://mvnrepository.com/artifact/junit/junit/4.10
 
-2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al source del back-end y el front-end en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contarán las lineas de los metodos.
+2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al source del back-end en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contarán las lineas de los metodos.
  
 
   Los archivos estan disponibles en dropbox en los siguientes vínculos:
@@ -34,7 +34,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   
   <a href="https://www.dropbox.com/s/2vm6svhgpdz8c4l/MPAnnotationProcessorSpoon.java?dl=0">MPAnnotationProcessorSpoon.java</a>
   
-3. Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado al directorio de pruebas en un paquete <b>co.edu.uniandes.csw.mp.ann.test</b>, este clase será ejecutada al hacer Built del proyecto y ejecutará el processor que contará las lineas de los método con la anotacion.
+3. Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado al directorio de pruebas del back-end y el front-end en un paquete <b>co.edu.uniandes.csw.mp.ann.test</b>, este clase será ejecutada al hacer Built del proyecto y ejecutará el processor que contará las lineas de los método con la anotacion.
 
 
   El archivo también esta disponible en dropbox en el siguiente vínculo:
