@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface MPAnnotation {
 
-    public String type() default "BackEnd";
+    public String tier() default "BackEnd";
 
     public String reqId() default "1";
 }
