@@ -25,11 +25,12 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   <a href="https://www.dropbox.com/s/t76k6ykxmyy0unc/MPAnnotation.java?dl=0">MPAnnotation.java</a>
   
   <a href="https://www.dropbox.com/s/2vm6svhgpdz8c4l/MPAnnotationProcessorSpoon.java?dl=0">MPAnnotationProcessorSpoon.java</a>
+  
+3. Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado al directorio de pruebas, este clase sera ejecutada eal hacer Built del proyecto y ejecutará el processor que contará las lineas de los método con la anotacion.
 
-
-3. Crear directorio 'data' en la raiz del proyecto para que allí se generen los reportes (.csv) con la información del conteo.
+4. Crear directorio 'data' en la raíz del proyecto para que allí se generen los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se debera modificar la ruta en la linea 35 de la clase <b>MPAnnotationProcessorSpoon.java</b>
 
 ### Desarrolladores
 * Juan David García
-* Mauricio Amaya
+* Mauricio Amaya Rios
 * Wilmar Fuquen
