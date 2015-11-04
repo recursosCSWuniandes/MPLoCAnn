@@ -17,7 +17,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
   
   Maven: http://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core/4.3.0
 
-2. Descargar los archiuvos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al src del proyecto en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contaran las lineads de los metodos.
+2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al src del proyecto en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contaran las lineads de los metodos.
 3. Crear directorio data en la raiz del proyecto para que alli se generen los reportes (.csv) con la información del conteo.
 
 ### Desarrolladores
