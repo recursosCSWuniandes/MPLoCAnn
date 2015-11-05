@@ -22,7 +22,7 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
 
 2. Anotación y Procesador:
 
-  Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados a la carpeta `Source Packages` del proyecto logic en el paquete <b>co.edu.uniandes.csw.mp.ann</b> (debe crear el paquete). Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor de Spoon con el que se contarán las lineas de los métodos.
+  Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados a la carpeta `Source Packages` del proyecto logic en el paquete <b>co.edu.uniandes.csw.mp.ann</b> (debe crear el paquete). Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesador de Spoon con el que se contarán las lineas de los métodos.
   
   <a href="https://www.dropbox.com/s/t76k6ykxmyy0unc/MPAnnotation.java?dl=0">MPAnnotation.java</a>
   
