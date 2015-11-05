@@ -7,46 +7,50 @@ SpAnnLoc se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
 ### Instrucciones de Uso
 **Nota**: Las instrucciones que se presentan a continuación se realizaron tomando como base los proyectos de Marketplace utilizados en el curso.
 
-1. Maven
+1. Dependencia Maven:
 
-  Inicialmente se debe configurar las dependencia de maven en el archivo pom.xml del back-end del proyecto:
+  Agregar la dependencia de Spoon (actualmente 4.3.0) al archivo pom.xml de Maven que se encuentra en la carpeta `Project Files` del proyecto. **Esto lo debe hacer para ambos proyectos (logic y web)**.
 
-  Liberia: <a href="http://spoon.gforge.inria.fr/">Spoon</a>
+  ```xml
+    <dependency>
+      <groupId>fr.inria.gforge.spoon</groupId>
+      <artifactId>spoon-core</artifactId>
+      <version>4.3.0</version>
+    </dependency> 
+  ```
+  **Nota**: Debe asegurarse que también se haya agregado la dependencia de JUnit (en cualquier versión) al pom.xml de ambos proyectos.
 
-  Versión: 4.3.0
-  
-  Maven: http://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core/4.3.0
-  
-  Adicionalmente en el pom.xml del front-end se debe configurar la libreria de JUnit, dado que esta aun no se ha agregado.
+2. Anotación y Procesador:
 
-  Liberia: <a href="http://junit.org/">Spoon</a>
-
-  Versión: 4.10
-  
-  Maven: http://mvnrepository.com/artifact/junit/junit/4.10
-
-2. Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados al source del back-end en un paquete <b>co.edu.uniandes.csw.mp.ann</b>. Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor con el que se contarán las lineas de los metodos.
- 
-
-  Los archivos estan disponibles en dropbox en los siguientes vínculos:
+  Descargar los archivos <b>MPAnnotation.java</b> y <b>MPAnnotationProcessorSpoon.java</b> que deben ser agregados a la carpeta `Source Packages` del proyecto logic en el paquete <b>co.edu.uniandes.csw.mp.ann</b> (debe crear el paquete). Estos archivos hacen referencia a la anotación con la que se va a trabajar y al procesor de Spoon con el que se contarán las lineas de los métodos.
   
   <a href="https://www.dropbox.com/s/t76k6ykxmyy0unc/MPAnnotation.java?dl=0">MPAnnotation.java</a>
   
   <a href="https://www.dropbox.com/s/2vm6svhgpdz8c4l/MPAnnotationProcessorSpoon.java?dl=0">MPAnnotationProcessorSpoon.java</a>
   
-3. Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado al directorio de pruebas del back-end y el front-end en un paquete <b>co.edu.uniandes.csw.mp.ann.test</b>, este clase será ejecutada al hacer Built del proyecto y ejecutará el processor que contará las lineas de los método con la anotacion.
-
-
-  El archivo también esta disponible en dropbox en el siguiente vínculo:
+3. Launcher:
   
+  Descargar el archivo <b>MPAnnotationTest.java </b> que debe ser agregado en la carpeta `Test Packages` de los proyectos **logic y web** en un paquete <b>co.edu.uniandes.csw.mp.ann.test</b> (debe crear el paquete). Este archivo es necesario pues contiene el Launcher que permite ejecutar el procesador de Spoon al momento de hacer build.
+
   <a href="https://www.dropbox.com/s/bqha5p3aknmjg7k/MPAnnotationTest.java?dl=0">MPAnnotation.java</a>
 
-4. Crear directorio 'data' del back-end y el front-end para que allí se generen los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se deberá modificar la ruta en la linea 35 de la clase <b>MPAnnotationProcessorSpoon.java</b>.
+4. Output:
 
-5. Finalmente se deben agregar la anotación a los metodos que queremos sean contados de la siguiente manera:
+  Crear la carpeta `data` en el proyecto logic y web para que allí se guarden los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se deberá modificar la ruta en la linea `35` de la clase <b>MPAnnotationProcessorSpoon.java</b>.
 
-  @MPAnnotation(tier="Nombre_de_la_capa", reqId="Id_del_requerimiento")
+5. Uso:
 
+  Finalmente se debe agregar la anotación a los métodos que queremos sean contados de la siguiente manera:
+
+  ```java
+    @MPAnnotation(tier="<nombre_nivel>", reqId="<id_requerimiento>")
+  ```
+  
+  Ejemplo:
+
+  ```java
+    @MPAnnotation(tier="Backend", reqId="C4-R5")
+  ```
 
 ### Desarrolladores
 * Juan David García
