@@ -46,10 +46,23 @@ MPLoCAnn se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
     @MPLoCAnn(tier="<nombre_nivel>", reqId="<id_requerimiento>")
   ```
   
-  Ejemplo:
+  Ejemplo de método con annotación:
 
   ```java
     @MPLoCAnn(tier="Backend", reqId="C4-R5")
+    public List<ProductEntity> getByBookName(String name) {
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("name", "%" + name.toUpperCase() + "%");
+        return executeListNamedQuery("Product.getByBookName", params);
+    }
+  ```
+  
+  Cuando se lance la opción `Build` se ejecutara el procesador y se generará el archivo `LoC_Report_MMDD_HHMM.csv` en la carpeta `data`, donde cada registro del archivo corresponde a un método en el que se uso la anotación.
+  Ejemplo del archivo:
+  
+  ```csv
+  Requerimiento;Nivel;Method;LoC
+  C4-R5;Backend;getByBookName;4
   ```
 
 ### Desarrolladores
