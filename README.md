@@ -36,7 +36,7 @@ MPLoCAnn se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
 
 4. Output:
 
-  Crear la carpeta `data` en el proyecto logic y web para que allí se guarden los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se deberá modificar la ruta en la linea `35` de la clase <b>MPLoCAnnSpoonProcessor.java</b>.
+  Crear la carpeta `data` en el proyecto **logic y web** para que allí se guarden los reportes (.csv) con la información del conteo. Si se desea guardar los reportes en una ubicación diferente se deberá modificar la ruta en la línea `35` de la clase <b>MPLoCAnnSpoonProcessor.java</b>.
 
 5. Uso:
 
