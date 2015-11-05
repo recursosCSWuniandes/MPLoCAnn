@@ -1,6 +1,6 @@
 package co.edu.uniandes.csw.mp.ann.test;
 
-import co.edu.uniandes.csw.mp.ann.MPAnnotationProcessorSpoon;
+import co.edu.uniandes.csw.mp.ann.MPLoCAnnSpoonProcessor;
 import org.junit.Test;
 import spoon.Launcher;
 import spoon.SpoonAPI;
@@ -10,7 +10,7 @@ import spoon.SpoonAPI;
  *
  * @author Wilmar Fuquen
  */
-public class MPAnnotationTest {
+public class MPLoCAnnTest {
 
     @Test
     public void testBoundProcessor() throws Exception {
@@ -18,7 +18,7 @@ public class MPAnnotationTest {
         launcher.getEnvironment().setNoClasspath(true);
         launcher.addInputResource("./src/main/java");
         launcher.setSourceOutputDirectory("./target/spoon-processor");
-        launcher.addProcessor(new MPAnnotationProcessorSpoon());
+        launcher.addProcessor(new MPLoCAnnSpoonProcessor());
         launcher.run();
     }
 }

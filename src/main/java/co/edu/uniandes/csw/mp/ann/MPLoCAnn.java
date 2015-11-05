@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * @author Juan David García Manrique
  */
 @Target(ElementType.METHOD)
-public @interface MPAnnotation {
+public @interface MPLoCAnn {
 
     public String tier() default "BackEnd";
 

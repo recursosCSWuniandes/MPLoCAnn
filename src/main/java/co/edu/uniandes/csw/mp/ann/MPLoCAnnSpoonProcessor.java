@@ -16,10 +16,10 @@ import spoon.reflect.declaration.CtMethod;
  *
  * @author Wilmar Fuquen y Juan David García
  */
-public class MPAnnotationProcessorSpoon extends AbstractAnnotationProcessor<MPAnnotation, CtMethod<?>> {
+public class MPLoCAnnSpoonProcessor extends AbstractAnnotationProcessor<MPLoCAnn, CtMethod<?>> {
 
     @Override
-    public void process(MPAnnotation annotation, CtMethod<?> element) {
+    public void process(MPLoCAnn annotation, CtMethod<?> element) {
         // Cuenta el número de líneas
         String body = element.getBody().toString();
         int numLineas = 0;
@@ -30,13 +30,14 @@ public class MPAnnotationProcessorSpoon extends AbstractAnnotationProcessor<MPAn
         }
         // Genera .csv con la información
         try {
-            Date fecha = Calendar.getInstance().getTime();
+            Calendar cal = Calendar.getInstance();
             // TODO modificar ruta si es necesario
-            String ruta = "./data/LoC_Report_" + fecha.getMonth() + fecha.getDay() + "_" + fecha.getHours() + fecha.getMinutes() + ".csv";
+            String ruta = "./data/LoC_Report_"
+                    + (cal.get(Calendar.MONTH) + 1) + cal.get(Calendar.DAY_OF_MONTH) + "_" + cal.get(Calendar.HOUR_OF_DAY) + cal.get(Calendar.MINUTE) + ".csv";
             boolean existe = false;
 
-            File f = new File(ruta);
             // Verifica si ya existe para imprimir el encabezado;
+            File f = new File(ruta);
             if (f.exists()) {
                 existe = true;
             }
@@ -52,7 +53,7 @@ public class MPAnnotationProcessorSpoon extends AbstractAnnotationProcessor<MPAn
             pw.close();
             fw.close();
         } catch (IOException ex) {
-            Logger.getLogger(MPAnnotationProcessorSpoon.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MPLoCAnnSpoonProcessor.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

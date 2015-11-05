@@ -5,9 +5,9 @@ package co.edu.uniandes.csw.mp.ann;
  *
  * @author Wilmar Fuquen y Juan David García
  */
-public class ProductAnn {
+public class Demo {
 
-    @MPAnnotation(tier = "Backend", reqId = "Req01")
+    @MPLoCAnn(tier = "Backend", reqId = "Req01")
     public int countProductsBackend() {
         int i;
         i = 0;
@@ -15,7 +15,7 @@ public class ProductAnn {
         return i;
     }
 
-    @MPAnnotation(tier = "Service", reqId = "Req01")
+    @MPLoCAnn(tier = "Service", reqId = "Req01")
     public int countProductsService() {
         // Test doc line
         int i;
