@@ -46,7 +46,7 @@ MPLoCAnn se desarrolló en el contexto del curso Gestión de Proyectos de Softwa
     @MPLoCAnn(tier="<nombre_nivel>", reqId="<id_requerimiento>")
   ```
   
-  Ejemplo de método con annotación:
+  Ejemplo de método con anotación:
 
   ```java
     @MPLoCAnn(tier="Backend", reqId="C4-R5")
