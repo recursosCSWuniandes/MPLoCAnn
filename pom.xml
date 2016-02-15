@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>co.edu.uniandes.csw</groupId>
     <artifactId>MPLoCAnn</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -13,11 +13,11 @@
     <distributionManagement>
         <repository>
             <id>csw-releases</id>
-            <url>http://157.253.236.129:8081/content/repositories/releases/</url>
+             <url>http://157.253.238.75:8081/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>csw-snapshots</id>
-            <url>http://157.253.236.129:8081/content/repositories/snapshots/</url>
+             <url>http://157.253.238.75:8081/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <dependencies>                 
@@ -26,5 +26,5 @@
             <artifactId>spoon-core</artifactId>
             <version>4.3.0</version>
         </dependency>                     
-    </dependencies>  
+    </dependencies>
 </project>
